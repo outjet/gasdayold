@@ -1,0 +1,9 @@
+{
+    "name": "outjet/gasday",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "config": {
+        "platform-check": false
+    }
+}

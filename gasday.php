@@ -80,6 +80,7 @@ a:hover {
 <BODY>
 <div id="loading-indicator" class="loading">Loading...</div>
 <?php
+require 'vendor/autoload.php';
 
 function get_temperatures($location) {
     // global variable to catch if we're using fresh data
@@ -218,6 +219,7 @@ $daily_temperatures_akr = get_temperatures("CLE/94,39");
 ($offset >= 0 ? "+" : "") . gmdate("H", abs($offset)) . ")<br>";
 ?>
 </span>
+
 <?php
 use GuzzleHttp\Client;
 
